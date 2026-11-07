@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: #f5f3ef;
+  --color-ink: #161616;
+  --color-mute: #77736b;
+  --color-line: #dcd8d0;
+  --font-sans: var(--f-sans);
+  --font-serif: var(--f-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
+body { @apply bg-paper font-sans text-ink antialiased; }
+h1, h2, h3 { @apply font-serif font-normal leading-tight; }
+img, video { @apply block max-w-full; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .wrap { @apply mx-auto max-w-7xl px-5 py-12 md:px-10; }
+  .meta { @apply text-sm text-mute; }
+  .btn { @apply inline-block cursor-pointer rounded-full border border-ink bg-transparent px-5 py-2 text-sm transition hover:bg-ink hover:text-paper; }
+  .btn-solid { @apply bg-ink text-paper hover:opacity-80; }
+  .rule { @apply my-8 flex items-center gap-5 font-serif text-3xl capitalize after:h-px after:flex-1 after:bg-line after:content-['']; }
 }
