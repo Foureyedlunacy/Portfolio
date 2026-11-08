@@ -30,7 +30,7 @@ export default function Home() {
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 hover:opacity-80"
     >
-      <span className="font-bold text-blue-800 text-3xl"> => Instagram</span>
+      <span className="font-bold text-blue-800 text-3xl"> { " => " } Instagram</span>
     </a></h1>
         </div>
         <section className={screen}>
