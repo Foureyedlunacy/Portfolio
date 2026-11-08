@@ -23,6 +23,16 @@ export default function Home() {
           <img className='h-36 w-36' src="/01.png" alt="Work in progress"  />
           <h2 className="font-bold text-red-800 text-3xl"  >The site is under development please ignore the malfunction ,naming conventions and 3dmodel viewport errors
             </h2>
+          <h1 className="font-extrabold text-red-700 text-3xl" >PLEASE VIEW MY WORK ON 
+          <a
+      href="https://www.instagram.com/foureyedlunacy?srtk=MThzbjYyOHp2eHQycQ=="
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 hover:opacity-80"
+    >
+      <span>
+     Instagram</span>
+    </a></h1>
         </div>
         <section className={screen}>
           <p className="text-xs uppercase tracking-[0.2em] text-mute">Portfolio</p>
